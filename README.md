@@ -1,5 +1,9 @@
 # 2022_MM_Portfolio
 This repository holds a portfolio of my work, which focuses on biomechanics, wearable technologies (inertial measurement units, force-measuring instrumented insoles) and machine learning.
 
-# First upload: 2022_03_06_Hip_Angles_StairMaster_v_Walking
+# 2022_03_06_Hip_Angles_StairMaster_v_Walking
 This upload includes a script (.py) and generated plots (.png). The script aggregates OpenSim inverse kinematics results (https://simtk-confluence.stanford.edu:8443/display/OpenSim/Getting+Started+with+Inverse+Kinematics) across 15 health subjects and two activities (walking: 2mph, stair ascent on a StairMaster: level 8). It then plots ensemble-averaged (averaged across subject gait cycles; heel strike = 0%) hip flexion, adduction, and internal rotation using seaborn relplot. The shaded area represents standard deviation rather than confidence intervals.
+
+# ML Act Class Manuscript_ASME_JBiomech
+In 2019, I conducted a study which combined wearable technologies with machine learning for activity classification. I fitted 10 subjects with inertial measurement units (IMUs), which are secured to body segments to capture time series acceleration, angular velocity, and magnetic field strength. Subjects wore IMUs for 8 hours and maintained an activity log (i.e. 'walking for 30s', 'sitting for 1hr', etc.). Using custom Matlab scripts, I cleaned the data and labeled it using subjects' activity logs for training supervised machine learning (ML) algorithms. I found decision trees achieved accurate results with short computation times, as well as being simpler to interpret and explain compared to other ML types. More specifically, an 'optimized' approach which first determined whether subjects were sedentary or non-sedentary and then identified sub-activities (e.g. sitting, walking, running) performed best, achieving >80% accuracy during full eature cohort training. This upload is a manuscript I drafted for submission to the ASME Journal of Biomechanics in 2020.
+
